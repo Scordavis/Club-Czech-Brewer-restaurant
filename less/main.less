@@ -632,9 +632,17 @@ svg {
 	width: 443px;
 	max-width: 60%;
 }
+.seo-page-title{
+	font-size: 24px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.seo-page-description{
+	margin-bottom: 80px;
+}
 article{
 	line-height: 1.4;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .green-filter{
 	position: absolute;
@@ -644,7 +652,7 @@ article{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: fade(@secondColor, 90%);
+	background-color: fade(@secondColor, 95%);
 	z-index: 2;
 }
 // start main-section
@@ -667,17 +675,61 @@ article{
 	}
 	.news{
 		border-left: 1px solid @mainColor;
+		.news-preview-wrapper{
+			padding-left: 44px;
+			h3{
+				margin-top: 0;
+				clear: both;
+			}	
+			&:last-child{
+				.read-more{
+					margin-bottom: 10px;
+				}		
+			}
+		}
 	}
-	.news-preview-wrapper{
-		padding-left: 44px;
-		h3{
-			margin-top: 0;
-			clear: both;
-		}	
-		&:last-child{
-			.read-more{
-				margin-bottom: 10px;
-			}		
+	.about{
+		article{
+			h4{
+				margin-top: 30px;
+			}
+		}
+	}
+	.read-columns{
+		article{
+		column-count: 2;
+		column-gap: 80px;			
+		}
+	}
+	.news-list{
+		border-left: none;
+		.news-preview-wrapper{
+			display: inline-block;
+			border-bottom: 1px solid @mainColor;
+			padding-left: 0;
+			padding-bottom: 45px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			&:first-child{
+				margin-top: 20px;
+			}
+			&:last-child{
+				border-bottom: none;
+				margin-bottom: 0;
+			}
+			img{
+				float: left;
+				margin-right: 30px;
+				margin-top: 5px;
+				border: 2px solid white;
+			}
+			h3{
+				clear: none;
+				margin-bottom: 16px;
+			}
+			article{
+				clear: none;
+			}
 		}
 	}
 	.partners{
@@ -703,6 +755,11 @@ article{
 .dark{	
 	color: @mainColor;
 }
+.pattern{
+	background-repeat: repeat;
+	background-size: auto;
+	padding-top: 60px;
+}
 // end main-section
 // start menu-preview
 .menu-preview{
@@ -717,6 +774,7 @@ article{
 		display: block;
 		position: absolute;
 		left: 100px;
+		top: 20%;
 		overflow: hidden;
 		width: 430px;
 		height: 430px;
@@ -748,7 +806,25 @@ article{
 				font-weight: 700;
 				min-height: 430px;
 			}
+		}		
+		.loyalty{
+			h3{
+				font-size: 24px;
+				text-transform: none;
+				font-weight: 700;
+			}
+			p{
+				height: auto;
+				min-height: inherit;
+				margin-bottom: 18px;
+			}
 		}
+	}
+}
+// or
+.yellow-divider-block{
+	.divider{
+		margin-bottom: 0;
 	}
 }
 // end menu-preview

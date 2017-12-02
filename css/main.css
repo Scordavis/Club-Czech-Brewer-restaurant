@@ -765,9 +765,17 @@ svg {
   width: 443px;
   max-width: 60%;
 }
+.seo-page-title {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.seo-page-description {
+  margin-bottom: 80px;
+}
 article {
   line-height: 1.4;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .green-filter {
   position: absolute;
@@ -777,7 +785,7 @@ article {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(1, 76, 32, 0.9);
+  background-color: rgba(1, 76, 32, 0.95);
   z-index: 2;
 }
 .main-section {
@@ -801,15 +809,57 @@ article {
 .main-section .news {
   border-left: 1px solid #fcc855;
 }
-.main-section .news-preview-wrapper {
+.main-section .news .news-preview-wrapper {
   padding-left: 44px;
 }
-.main-section .news-preview-wrapper h3 {
+.main-section .news .news-preview-wrapper h3 {
   margin-top: 0;
   clear: both;
 }
-.main-section .news-preview-wrapper:last-child .read-more {
+.main-section .news .news-preview-wrapper:last-child .read-more {
   margin-bottom: 10px;
+}
+.main-section .about article h4 {
+  margin-top: 30px;
+}
+.main-section .read-columns article {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+}
+.main-section .news-list {
+  border-left: none;
+}
+.main-section .news-list .news-preview-wrapper {
+  display: inline-block;
+  border-bottom: 1px solid #fcc855;
+  padding-left: 0;
+  padding-bottom: 45px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.main-section .news-list .news-preview-wrapper:first-child {
+  margin-top: 20px;
+}
+.main-section .news-list .news-preview-wrapper:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.main-section .news-list .news-preview-wrapper img {
+  float: left;
+  margin-right: 30px;
+  margin-top: 5px;
+  border: 2px solid white;
+}
+.main-section .news-list .news-preview-wrapper h3 {
+  clear: none;
+  margin-bottom: 16px;
+}
+.main-section .news-list .news-preview-wrapper article {
+  clear: none;
 }
 .main-section .partners {
   margin-top: 80px;
@@ -832,6 +882,12 @@ article {
 .dark {
   color: #fcc855;
 }
+.pattern {
+  background-repeat: repeat;
+  -webkit-background-size: auto auto;
+          background-size: auto;
+  padding-top: 60px;
+}
 .menu-preview {
   display: block;
   -webkit-background-size: cover;
@@ -846,6 +902,7 @@ article {
   display: block;
   position: absolute;
   left: 100px;
+  top: 20%;
   overflow: hidden;
   width: 430px;
   height: 430px;
@@ -877,6 +934,19 @@ article {
 .menu-preview .container .menu-preview-content p {
   font-weight: 700;
   min-height: 430px;
+}
+.menu-preview .container .loyalty h3 {
+  font-size: 24px;
+  text-transform: none;
+  font-weight: 700;
+}
+.menu-preview .container .loyalty p {
+  height: auto;
+  min-height: inherit;
+  margin-bottom: 18px;
+}
+.yellow-divider-block .divider {
+  margin-bottom: 0;
 }
 .page-footer {
   position: relative;
@@ -1142,6 +1212,16 @@ article {
   .menu-preview .container .menu-preview-content p {
     min-height: 500px;
   }
+  .menu-preview .container .loyalty h3 {
+    font-size: 24px;
+    text-transform: none;
+    font-weight: 700;
+  }
+  .menu-preview .container .loyalty p {
+    height: auto;
+    min-height: inherit;
+    margin-bottom: 18px;
+  }
 }
 @media screen and (max-width: 991px) {
   .page-header .top-info-section .top-logo-wrap a .top-logo {
@@ -1162,6 +1242,27 @@ article {
   .main-section .news .news-preview-wrapper {
     padding-left: 0;
   }
+  .main-section .read-columns article {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+  .main-section .news-list {
+    border-top: none;
+  }
+  .main-section .news-list .news-preview-wrapper {
+    text-align: center;
+  }
+  .main-section .news-list .news-preview-wrapper img {
+    float: none;
+    margin: 0 auto 30px;
+  }
+  .main-section .news-list .news-preview-wrapper h3 {
+    margin-bottom: 20px;
+  }
   .menu-preview {
     padding-bottom: 20px;
   }
@@ -1179,6 +1280,12 @@ article {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .menu-preview .container .loyalty p {
+    margin-bottom: 18px;
+  }
+  .yellow-divider-block {
+    padding: 50px 0;
   }
   .slide__content .slide__content-wrap .slide__text .slide__text-link {
     background-color: #844a17;
