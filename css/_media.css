@@ -329,6 +329,17 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .main-section .post img {
+    border: 2px solid white;
+  }
+  .main-section .post .left-floating {
+    float: none;
+    margin: 20px auto;
+  }
+  .main-section .post .right-floating {
+    float: none;
+    margin: 20px auto;
+  }
   .menu-preview {
     padding-top: 80px;
     padding-bottom: 40px;
@@ -341,6 +352,30 @@
     width: 100%;
     max-width: 250px;
     margin: 0 0 20px 0;
+  }
+  .recommended-wrapper {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .recommended-wrapper .recommended h3 {
+    margin: 20px auto 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .recommended-wrapper .recommended a {
+    letter-spacing: 1px;
+  }
+  .recommended-wrapper .recommended a .recommended-article {
+    text-align: center;
+  }
+  .recommended-wrapper .recommended a .recommended-article figcaption {
+    max-width: 80%;
+    margin: 20px auto 50px;
+    font-size: 20px;
+  }
+  .recommended-wrapper .recommended a:hover .recommended-article img {
+    border: 2px solid white;
   }
 }
 @media screen and (max-width: 500px) {
