@@ -332,10 +332,22 @@
 				.ico-partner{
 				}
 			}
+		}		
+		.post{
+			img{
+				border: 2px solid white;
+			}
+			.left-floating{
+				float: none;
+				margin: 20px auto;
+			}
+			.right-floating{
+				float: none;
+				margin: 20px auto;
+			}
 		}
 	}
 	.divider{
-
 	}
 	.menu-preview{
 		padding-top: 80px;
@@ -352,6 +364,42 @@
 			}
 		}
 	}
+// start recommended
+.recommended-wrapper{
+	padding-top: 40px;
+	padding-bottom: 60px;
+	.recommended{
+		h3{
+			margin: 20px auto 40px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			text-align: center;
+		}
+		a{
+			letter-spacing: 1px;
+			.recommended-article{
+				text-align: center;
+				img{
+				}
+				figcaption{
+					max-width: 80%;
+					margin: 20px auto 50px;
+					font-size: 20px;
+				}
+			}
+			&:hover{
+				.recommended-article{
+					img{
+						border: 2px solid white;
+					}
+					figcaption{
+					}
+				}
+			}
+		}
+	}	
+}
+// end recommended
 }
 
 // screen and (max-width: 500px)
