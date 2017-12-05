@@ -28,11 +28,11 @@
 /* brewer */
 @font-face {
   font-family: "brewer";
-  src:url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1511800194.eot");
-  src:url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1511800194.eot?#iefix") format("embedded-opentype"),
-    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1511800194.woff") format("woff"),
-    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1511800194.ttf") format("truetype"),
-    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1511800194.svg#1511800194") format("svg");
+  src:url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1512401004.eot");
+  src:url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1512401004.eot?#iefix") format("embedded-opentype"),
+    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1512401004.woff") format("woff"),
+    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1512401004.ttf") format("truetype"),
+    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1512401004.svg#1512401004") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -71,6 +71,12 @@
 }
 .ib-insta:before {
   content: "\63";
+}
+.ib-zoom:before {
+  content: "\64";
+}
+.ib-up:before {
+  content: "\65";
 }
 
 @media screen and (max-width: 1366px) {
@@ -172,6 +178,38 @@
     min-height: inherit;
     margin-bottom: 18px;
   }
+  .main-section .gallery-wrapper {
+    margin-bottom: 30px;
+  }
+  .main-section .gallery-wrapper .gallery-item {
+    height: 205px;
+  }
+  .main-section .gallery-wrapper .gallery-item a {
+    border: 1px solid white;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  .main-section .gallery-wrapper .gallery-item a img {
+    height: 100%;
+    width: 100%;
+  }
+  .main-section .gallery-wrapper .gallery-item a .gallery-item-description {
+    height: 111px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    -webkit-transform: translateY(-160px);
+        -ms-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+  .main-section .gallery-wrapper .gallery-item a .gallery-item-zoom {
+    font-size: 48px;
+    -webkit-transform: scale(4);
+        -ms-transform: scale(4);
+            transform: scale(4);
+    opacity: 0;
+  }
 }
 @media screen and (max-width: 991px) {
   .page-header .top-info-section .top-logo-wrap a .top-logo {
@@ -213,6 +251,39 @@
   .main-section .news-list .news-preview-wrapper h3 {
     margin-bottom: 20px;
   }
+  .main-section .gallery-wrapper {
+    margin-bottom: 0;
+  }
+  .main-section .gallery-wrapper .gallery-item {
+    height: 330px;
+    margin-bottom: 30px;
+  }
+  .main-section .gallery-wrapper .gallery-item a {
+    border: 1px solid white;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  .main-section .gallery-wrapper .gallery-item a img {
+    height: 100%;
+    width: 100%;
+  }
+  .main-section .gallery-wrapper .gallery-item a .gallery-item-description {
+    height: 50%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    -webkit-transform: translateY(-150%);
+        -ms-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  .main-section .gallery-wrapper .gallery-item a .gallery-item-zoom {
+    font-size: 48px;
+    -webkit-transform: scale(4);
+        -ms-transform: scale(4);
+            transform: scale(4);
+    opacity: 0;
+  }
   .menu-preview {
     padding-bottom: 20px;
   }
@@ -247,6 +318,37 @@
   }
   .slide__content .slide__content-wrap .slide__text .slide__text-link:after {
     display: none;
+  }
+  .to-top {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    color: #333333;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    background-color: #fcc855;
+    border: 1px solid #fcc855;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+  .to-top p {
+    margin: 0;
+    text-align: center;
+  }
+  .to-top p .ib-up {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .to-top:hover {
+    background-color: #fcc855;
+    color: #333333;
   }
 }
 @media screen and (max-width: 767px) {
@@ -340,6 +442,40 @@
     float: none;
     margin: 20px auto;
   }
+  .main-section .gallery-wrapper {
+    margin-bottom: 0;
+  }
+  .main-section .gallery-wrapper .gallery-item {
+    max-width: 330px;
+    height: 300px;
+    margin: 0 auto 30px;
+  }
+  .main-section .gallery-wrapper .gallery-item a {
+    border: 1px solid white;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  .main-section .gallery-wrapper .gallery-item a img {
+    height: 100%;
+    width: 100%;
+  }
+  .main-section .gallery-wrapper .gallery-item a .gallery-item-description {
+    height: 50%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    -webkit-transform: translateY(-150%);
+        -ms-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  .main-section .gallery-wrapper .gallery-item a .gallery-item-zoom {
+    font-size: 48px;
+    -webkit-transform: scale(4);
+        -ms-transform: scale(4);
+            transform: scale(4);
+    opacity: 0;
+  }
   .menu-preview {
     padding-top: 80px;
     padding-bottom: 40px;
@@ -352,6 +488,9 @@
     width: 100%;
     max-width: 250px;
     margin: 0 0 20px 0;
+  }
+  .yellow-divider-block {
+    padding: 50px 0;
   }
   .recommended-wrapper {
     padding-top: 40px;

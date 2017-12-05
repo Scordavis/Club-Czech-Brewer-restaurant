@@ -28,11 +28,11 @@
 /* brewer */
 @font-face {
   font-family: "brewer";
-  src:url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1511800194.eot");
-  src:url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1511800194.eot?#iefix") format("embedded-opentype"),
-    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1511800194.woff") format("woff"),
-    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1511800194.ttf") format("truetype"),
-    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1511800194.svg#1511800194") format("svg");
+  src:url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1512401004.eot");
+  src:url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1512401004.eot?#iefix") format("embedded-opentype"),
+    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1512401004.woff") format("woff"),
+    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1512401004.ttf") format("truetype"),
+    url("https://file.myfontastic.com/b5C3X9kYBrwoHLeLnoTnTe/fonts/1512401004.svg#1512401004") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -71,5 +71,11 @@
 }
 .ib-insta:before {
   content: "\63";
+}
+.ib-zoom:before {
+  content: "\64";
+}
+.ib-up:before {
+  content: "\65";
 }
 

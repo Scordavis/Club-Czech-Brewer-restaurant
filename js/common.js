@@ -32,6 +32,14 @@ $(document).ready(function() {
 	});
 
 
+  // SmoothScroll
+	var scroll = new SmoothScroll('a[href*="#"]');
+
+
+	// AOS
+	AOS.init();
+
+
 	// form
 	$("form").submit(function() { //Change
 		var th = $(this);
