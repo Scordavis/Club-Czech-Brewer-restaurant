@@ -167,6 +167,9 @@
 
 // screen and (max-width: 991px)
 @media screen and (max-width: 991px){
+	body{
+		padding-bottom: 22px;
+	}
 	.page-header {
 		.top-info-section {
 			.top-logo-wrap{ 
@@ -242,6 +245,18 @@
 				}			
 			}
 		}
+		// catalog
+		.catalog-wrapper-description{
+			padding-top: 64px;
+			padding-bottom: 64px;
+			border-bottom: 1px solid @mainColor;
+			&:first-of-type{
+				padding-top: 0;
+			}
+			&:last-of-type{
+				padding-bottom: 0;
+			}
+		}
 	}
 	.menu-preview{
 		padding-bottom: 20px;
@@ -295,7 +310,7 @@
 		margin: 0;
 		padding: 10px;
 		color: @graph;
-		bottom: 0;
+		bottom: 0px;
 		right: 0;
 		z-index: 4;
 		background-color: @mainColor;
@@ -458,7 +473,91 @@
 				}			
 			}
 		}
+
+	// catalog
+	.catalog-wrapper-description{
+		padding-top: 64px;
+		padding-bottom: 64px;
+		border-bottom: 1px solid @mainColor;
+		&:first-of-type{
+			padding-top: inherit;
+		}
+		&:last-of-type{
+			border-bottom: none;
+		}
+		.partner-avatar{
+			position: relative;
+			a{
+				.avatar-partner{
+					margin: auto;
+				}
+				p{
+					transform: translateY(10px);
+				}
+			}
+			&:hover{
+				p{
+				}
+			}
+		}
+		.partner-description{
+			text-align: center;
+			h3{
+				margin-top: 20px;
+			}
+			p{}
+		}
+		.panel-group{
+			margin-top: 24px;
+			.panel-default{
+				.panel-heading{
+					.panel-title{
+						.collapse-button{
+							text-align: center;
+							.rollover-icon{
+								display: none;
+								.ib-chevron{
+									&:before{
+										.transition(.2s);
+									}
+								}
+							}
+							&.collapsed{
+								.rollover-icon{
+									.ib-chevron{
+										&:before{
+										}
+									}
+								}
+								&:hover{
+									.rollover-icon{
+										.ib-chevron{
+											&:before{
+											}
+										}								
+									}
+								}
+							}
+							&:hover{
+								.rollover-icon{
+									.ib-chevron{
+										&:before{
+										}
+									}								
+								}
+							}
+						}
+					}
+				}
+				.panel-collapse{
+					.panel-body{
+						p{}
+					}
+				}
+			}
+		}
 	}
+}
 	.divider{
 	}
 	.menu-preview{

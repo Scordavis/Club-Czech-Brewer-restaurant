@@ -32,8 +32,8 @@ $(document).ready(function() {
 	});
 
 
-  // SmoothScroll
-	var scroll = new SmoothScroll('a[href*="#"]');
+  // SmoothScroll to-top
+	var scroll = new SmoothScroll('.to-top');
 
 
 	// AOS
