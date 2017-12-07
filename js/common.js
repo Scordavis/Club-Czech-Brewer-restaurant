@@ -38,8 +38,10 @@ $(document).ready(function() {
 
 	// AOS
 	AOS.init();
-
-
+	
+	// bootstrap-tabcollapse
+	$('#menuTabs').tabCollapse();
+	
 	// form
 	$("form").submit(function() { //Change
 		var th = $(this);

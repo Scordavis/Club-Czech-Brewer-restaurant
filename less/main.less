@@ -659,6 +659,13 @@ article{
 	background-color: fade(@secondColor, 95%);
 	z-index: 2;
 }
+.thumb{
+	max-width: 262px;
+	height: auto;
+	border: 1px solid white;
+	float: left;
+	margin: 0 20px 0px 0;
+}
 // start main-section
 .main-section{
 	position: relative;
@@ -844,7 +851,7 @@ article{
 			}			
 		}
 	}
-	// catalog
+	// start catalog
 	.catalog-wrapper-description{
 		padding-top: 64px;
 		padding-bottom: 64px;
@@ -968,7 +975,85 @@ article{
 			}
 		}
 	}
-	// catalog
+	// end catalog
+	// start menu
+	.menu-tabs{
+		.ul-menu-tabs{
+			width: 85%;
+			margin: 0 auto -2px;
+			border: none;
+			li{
+				width: 50%;
+				.menu-tab{
+					width: 100%;
+					background-color: @secondColor;
+					text-align: center;
+					font-size: 36px;
+					color: @mainColor;
+					text-transform: uppercase;
+					border: 3px solid @mainColor;
+					border-radius: 10px 10px 0 0;
+				}
+				&:hover{
+					.menu-tab{
+						background-color: lighten(@secondColor, 2%);
+					}
+				}
+				&.active{
+					.menu-tab{
+						background-color: @mainColor;
+						color: @graph;
+					}
+				}				
+			}
+		}
+		.menu-tab-wrapper{
+			background-color: @mainColor;
+			color: @graph;
+			border-radius: 10px;
+			font-weight: 700;
+			.menu-tab-content-wrapper{
+				padding: 40px 80px 20px;
+				.menu-tab-content{
+					padding-bottom: 40px;
+					border-bottom: 1px solid @graph;
+					margin-bottom: 40px;
+					&:last-of-type{
+						border: none;
+					}
+					.menu-tab-item{
+						.menu-row-item{
+							.meal-heading{
+								margin-top: 0;
+								min-height: 70px;
+								font-size: 20px;
+								font-weight: 700;
+							}
+							.meal-thumb{
+								width: 164px;
+								height: 164px;
+								object-fit: cover;
+							}
+							.meal-table-wrap{
+								.meal-table-row{
+									display: flex;
+									justify-content: space-between;
+									p{}
+								}
+							}	
+							.meal-description{
+								margin-top: 35px;
+							}
+						}
+						&:first-of-type{
+							padding-right: 24px;
+						}
+					}
+				}
+			}
+		}
+	}
+	// end menu
 }
 .dark{	
 	color: @mainColor;
@@ -1012,13 +1097,6 @@ article{
 				text-transform: uppercase;
 				letter-spacing: 1px;
 				font-weight: 500;
-			}
-			.thumb{
-				max-width: 262px;
-				height: auto;
-				border: 1px solid white;
-				float: left;
-				margin: 0 20px 0px 0;
 			}
 			p{
 				font-weight: 700;

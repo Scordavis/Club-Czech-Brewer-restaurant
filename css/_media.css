@@ -301,6 +301,19 @@
   .main-section .catalog-wrapper-description:last-of-type {
     padding-bottom: 0;
   }
+  .main-section .menu-tabs .ul-menu-tabs li .menu-tab {
+    font-size: 30px;
+  }
+  .main-section .menu-tabs .menu-tab-wrapper .menu-tab-content-wrapper .menu-tab-content {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .main-section .menu-tabs .menu-tab-wrapper .menu-tab-content-wrapper .menu-tab-content .menu-tab-item {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333333;
+  }
   .menu-preview {
     padding-bottom: 20px;
   }
@@ -345,7 +358,8 @@
     right: 0;
     z-index: 4;
     background-color: #fcc855;
-    border: 1px solid #fcc855;
+    border: none;
+    border-top: 1px solid #014c20;
     -webkit-border-radius: 0px;
             border-radius: 0px;
     -webkit-transition: 0.3s;
@@ -536,6 +550,76 @@
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
   }
+  .main-section .menu-tabs .ul-menu-tabs li .menu-tab {
+    font-size: 30px;
+  }
+  .main-section .menu-tabs .panel-group .panel {
+    margin-bottom: 20px;
+    border: none;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-heading {
+    background-color: #014c20;
+    border: 2px solid #fcc855;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-heading .panel-title {
+    width: 100%;
+    text-align: center;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-heading .panel-title a {
+    font-size: 30px;
+    color: #fcc855;
+    text-transform: uppercase;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body {
+    background-color: #fcc855;
+    color: #333333;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333333;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item .menu-row-item .meal-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item .menu-row-item .meal-thumb {
+    display: block;
+    width: 164px;
+    height: 164px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    float: none;
+    margin: auto;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item .menu-row-item .meal-table-wrap {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item .menu-row-item .meal-table-wrap .meal-table-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item .menu-row-item .meal-table-wrap .meal-table-row p {
+    margin-bottom: 6px;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content:last-of-type .menu-tab-item:last-of-type {
+    border: none;
+    margin-bottom: 0;
+  }
   .menu-preview {
     padding-top: 80px;
     padding-bottom: 40px;
@@ -622,6 +706,71 @@
   }
   .main-section .partners div:last-child a {
     margin-bottom: 0;
+  }
+  .main-section .menu-tabs .ul-menu-tabs li .menu-tab {
+    font-size: 30px;
+  }
+  .main-section .menu-tabs .panel-group .panel {
+    margin-bottom: 20px;
+    border: none;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-heading {
+    background-color: #014c20;
+    border: 2px solid #fcc855;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-heading .panel-title {
+    width: 100%;
+    text-align: center;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-heading .panel-title a {
+    font-size: 7vw;
+    color: #fcc855;
+    text-transform: uppercase;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body {
+    background-color: #fcc855;
+    color: #333333;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333333;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item .menu-row-item .meal-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item .menu-row-item .meal-thumb {
+    display: block;
+    width: 164px;
+    height: 164px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    float: none;
+    margin: auto;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item .menu-row-item .meal-table-wrap {
+    margin-bottom: 20px;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item .menu-row-item .meal-table-wrap .meal-table-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-section .menu-tabs .panel-group .panel .panel-collapse .panel-body .menu-tab-content .menu-tab-item .menu-row-item .meal-table-wrap .meal-table-row p {
+    margin-bottom: 6px;
   }
   .modal-form-wrapper .form-brand-wrapper {
     display: none;
