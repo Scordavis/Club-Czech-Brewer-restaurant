@@ -757,11 +757,13 @@ article{
 		}
 	}
 	.partners{
+		display: flex;
+		justify-content: space-between;		
 		margin-top: 80px;
 		padding-top: 80px;
 		border-top: 1px solid @mainColor;
 		a{
-			.ico-partner{
+			img{
 				.transition(.2s);
 				display: block;
 				position: relative;
@@ -769,7 +771,7 @@ article{
 				margin: auto;	
 			}	
 			&:hover{
-				.ico-partner{
+				img{
 					top: -6px;
 				}
 			}	
