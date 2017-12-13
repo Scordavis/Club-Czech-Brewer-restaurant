@@ -462,22 +462,21 @@ svg {
 				-webkit-perspective: 1000px;
 				perspective: 1000px;
 				.transition(.3s);
-				&:before{
+				.top-border-btn{
 					display: block;
-					content: '';
 					position: absolute;
 					top: -2px;
-					width: 100%;
+					width: 98%;
 					height: 4px;
 					background-color: @thirdColor;
 					.transition(.3s);
-				}				
-				&:after{
+				}
+				.bottom-border-btn{
 					display: block;
 					content: '';
 					position: absolute;
 					bottom: -4px;
-					width: 100%;
+					width: 98%;
 					height: 4px;
 					background-color: @thirdColor;
 					.transition(.2s);
@@ -487,11 +486,11 @@ svg {
 				}
 				&:hover {
 					text-decoration: none;
-					&:before{
-						top: -6px;
+					.top-border-btn{
+						top: -6px
 					}
-					&:after{
-						bottom: -8px;
+					.bottom-border-btn{
+						bottom: -8px
 					}
 				}
 				&:active {
@@ -1083,6 +1082,7 @@ article{
 		overflow: hidden;
 		width: 430px;
 		height: 430px;
+		max-height: 80%;
 		background-size: contain;
 		background-repeat: no-repeat;
 		opacity: .16;

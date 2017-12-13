@@ -343,10 +343,10 @@
     color: white;
     padding: 4px 10px;
   }
-  .slide__content .slide__content-wrap .slide__text .slide__text-link:before {
+  .slide__content .slide__content-wrap .slide__text .slide__text-link .top-border-btn {
     display: none;
   }
-  .slide__content .slide__content-wrap .slide__text .slide__text-link:after {
+  .slide__content .slide__content-wrap .slide__text .slide__text-link .bottom-border-btn {
     display: none;
   }
   .to-top {

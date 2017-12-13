@@ -594,12 +594,11 @@ svg {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-.slide__content .slide__content-wrap .slide__text .slide__text-link:before {
+.slide__content .slide__content-wrap .slide__text .slide__text-link .top-border-btn {
   display: block;
-  content: '';
   position: absolute;
   top: -2px;
-  width: 100%;
+  width: 98%;
   height: 4px;
   background-color: #844a17;
   -webkit-transition: 0.3s;
@@ -607,12 +606,12 @@ svg {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-.slide__content .slide__content-wrap .slide__text .slide__text-link:after {
+.slide__content .slide__content-wrap .slide__text .slide__text-link .bottom-border-btn {
   display: block;
   content: '';
   position: absolute;
   bottom: -4px;
-  width: 100%;
+  width: 98%;
   height: 4px;
   background-color: #844a17;
   -webkit-transition: 0.2s;
@@ -628,10 +627,10 @@ svg {
 .slide__content .slide__content-wrap .slide__text .slide__text-link:hover {
   text-decoration: none;
 }
-.slide__content .slide__content-wrap .slide__text .slide__text-link:hover:before {
+.slide__content .slide__content-wrap .slide__text .slide__text-link:hover .top-border-btn {
   top: -6px;
 }
-.slide__content .slide__content-wrap .slide__text .slide__text-link:hover:after {
+.slide__content .slide__content-wrap .slide__text .slide__text-link:hover .bottom-border-btn {
   bottom: -8px;
 }
 .slide__content .slide__content-wrap .slide__text .slide__text-link:active {
@@ -1273,6 +1272,7 @@ article {
   overflow: hidden;
   width: 430px;
   height: 430px;
+  max-height: 80%;
   -webkit-background-size: contain;
           background-size: contain;
   background-repeat: no-repeat;
@@ -1821,10 +1821,10 @@ article {
     color: white;
     padding: 4px 10px;
   }
-  .slide__content .slide__content-wrap .slide__text .slide__text-link:before {
+  .slide__content .slide__content-wrap .slide__text .slide__text-link .top-border-btn {
     display: none;
   }
-  .slide__content .slide__content-wrap .slide__text .slide__text-link:after {
+  .slide__content .slide__content-wrap .slide__text .slide__text-link .bottom-border-btn {
     display: none;
   }
   .to-top {
