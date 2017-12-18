@@ -49,7 +49,7 @@
 			}
 			.tel-wrap{
 				top: 10px;
-				right: 30px;
+				right: 0;
 				.top-tel{
 					font-size: 20px;
 					margin-bottom: 0;
@@ -72,6 +72,12 @@
 		.brewer-top-navigation{
 			top: -10px;
 			.brewer-top-nav{
+				&:before{
+					display: none;
+				}
+				&:after{
+					display: none;
+				}
 				li{			
 				}
 				a{
@@ -331,11 +337,35 @@
 	.yellow-divider-block{
 		padding: 50px 0;
 	}
+	.recommended-wrapper{
+		.recommended{
+			h3{
+			}
+			a{
+				letter-spacing: 1px;
+				.recommended-article{
+					text-align: center;
+					margin-bottom: 40px;
+					img{
+					}
+					figcaption{
+					}
+				}
+				&:hover{
+					.recommended-article{
+						img{
+						}
+						figcaption{
+						}
+					}
+				}
+			}
+		}	
+	}
 	.slide__content{
 		.slide__content-wrap{
 			.slide__text{
 				.slide__text-link{
-					background-color: @thirdColor;
 					color: white;
 					padding: 4px 10px;
 					.top-border-btn{
@@ -446,20 +476,34 @@
 							font-weight: 500;
 						}
 					}
-					.navbar-collapse{
+					.brewer-top-navigation{
 						background-color: @mainColor;
 						position: relative;
 						margin-top: 5px;
 						z-index: 4;
 						border: none;
-						.navbar-nav{
+						.brewer-top-nav{
 							padding-top: 10px;
 							padding-bottom: 10px;
 							margin: auto;
 							overflow: hidden;
+							display: block;
 							li{
 								margin-top: 4px;
 								margin-bottom: 4px;
+							}
+							.current-menu-item{
+								a{
+									&:before{
+										display: none;
+									}
+									&:hover{
+										color: @secondColor;						
+									}
+									&:focus{
+										background-color: transparent;
+									}
+								}
 							}
 						}
 					}
@@ -481,11 +525,11 @@
 			img{
 				border: 2px solid white;
 			}
-			.left-floating{
+			.alignleft{
 				float: none;
 				margin: 20px auto;
 			}
-			.right-floating{
+			.alignright{
 				float: none;
 				margin: 20px auto;
 			}
@@ -547,7 +591,7 @@
 			}
 			.partner-description{
 				text-align: center;
-				h3{
+				h2{
 					margin-top: 20px;
 				}
 				p{}
@@ -692,6 +736,25 @@
 		}
 		// end menu
 	}
+	.slide__content{
+		.slide__content-wrap{
+			.slide__text{
+				width: 100%;
+				text-align: center;
+				.slide__text-link{
+					margin: auto;
+					color: white;
+					padding: 4px 10px;
+					.top-border-btn{
+						display: none;
+					}
+					.bottom-border-btn{
+						display: none;
+					}
+				}
+			}
+		}
+	}
 	.divider{
 	}
 	.menu-preview{
@@ -728,6 +791,7 @@
 				letter-spacing: 1px;
 				.recommended-article{
 					text-align: center;
+					margin-bottom: 40px;
 					img{
 					}
 					figcaption{
