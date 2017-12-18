@@ -6,24 +6,7 @@
 
 $(document).ready(function() {
 	
-	// form switcher
-	// $('button[data-src="#form-callback"]').on('click', function() {
-	// 	var metrika = $(this).data('fmetrika');
-	// 	var header = $(this).data('fhead');
-	// 	var info = $(this).data('finfo');
-	// 	$('.popup-callback').attr('onsubmit', metrika);
-	// 	$('.popup-callback h3').text(header);
-	// 	$('.popup-callback [name=form_subject]').val(info);
-	// });
 
-	// $('a[data-src="#form-callback"]').on('click', function() {
-	// 	var metrika = $(this).data('fmetrika');
-	// 	var header = $(this).data('fhead');
-	// 	var info = $(this).data('finfo');
-	// 	$('.popup-callback').attr('onsubmit', metrika);
-	// 	$('.popup-callback h3').text(header);
-	// 	$('.popup-callback [name=form_subject]').val(info);
-	// });
 
 	  // thanks modal remove
   $('.form-thanks > .thanks_wrapper > .thanks_text > .thanks_close').click(function() {
