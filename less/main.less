@@ -3,7 +3,7 @@
 
 *{
 	outline: none;
-	outline-color: transparent;	
+	outline-color: transparent;
 	border: none;
 	text-decoration: none;
 }
@@ -53,7 +53,7 @@ body{
 		height: 4px;
 		background-color: @thirdColor;
 		.transition(.3s);
-	}				
+	}
 	&:after{
 		display: block;
 		content: '';
@@ -100,8 +100,8 @@ body{
 	position: relative;
 	background-color: transparent;
 	background-size: contain;
-	background-repeat: no-repeat;		
-	background-position: center;		
+	background-repeat: no-repeat;
+	background-position: center;
 	width: 254px;
 	height: 50px;
 	color: white;
@@ -121,7 +121,7 @@ body{
 	margin-bottom: 40px;
 	&:hover, &:focus, &:active{
 		color: @mainColor;
-		border-bottom: 1px dashed @mainColor;	
+		border-bottom: 1px dashed @mainColor;
 	}
 }
 .wrapper-thumb{
@@ -214,20 +214,20 @@ body{
 				display: none;
 			}
 			li{
-				text-align: center;				
+				text-align: center;
 			}
 			a{
 				text-transform: uppercase;
 				font-size: 22px;
 				color: @secondColor;
-				font-weight: 500; 
-				letter-spacing: 1px;   
+				font-weight: 500;
+				letter-spacing: 1px;
 				padding: 0;
 				width: fit-content;
 				margin: auto;
 				.transition(.3s);
 				&:hover{
-					color: white;						
+					color: white;
 				}
 			}
 			.current-menu-item{
@@ -246,7 +246,7 @@ body{
 						background-color: @secondColor;
 					}
 					&:hover{
-						color: @secondColor;						
+						color: @secondColor;
 					}
 					&:focus{
 						background-color: transparent;
@@ -699,9 +699,9 @@ article{
 	z-index: 1;
 	.container{
 		z-index: 3;
-		position: relative;		
+		position: relative;
 	}
-	p{}	
+	p{}
 	.read-more {
 		float: right;
 	}
@@ -717,7 +717,7 @@ article{
 			&:last-child{
 				.read-more{
 					margin-bottom: 10px;
-				}		
+				}
 			}
 		}
 	}
@@ -734,7 +734,7 @@ article{
 	.read-columns{
 		article{
 		column-count: 2;
-		column-gap: 80px;			
+		column-gap: 80px;
 		}
 	}
 	.news-list{
@@ -788,7 +788,8 @@ article{
 	}
 	.partners{
 		display: flex;
-		justify-content: space-between;		
+		justify-content: space-between;
+		align-items: center;
 		margin-top: 80px;
 		padding-top: 80px;
 		border-top: 1px solid @mainColor;
@@ -796,15 +797,17 @@ article{
 			img{
 				.transition(.2s);
 				display: block;
+				max-width: 86px;
+				height: auto;
 				position: relative;
 				top: 0;
-				margin: auto;	
-			}	
+				margin: auto;
+			}
 			&:hover{
 				img{
 					top: -6px;
 				}
-			}	
+			}
 		}
 	}
 	.gallery-wrapper{
@@ -861,26 +864,26 @@ article{
 					opacity: 0;
 					.transition(.1s);
 					.ib-zoom{
-						height: inherit;						
+						height: inherit;
 						display: flex;
 						justify-content: center;
 						align-items: center;
-					}					
+					}
 				}
 				&:hover{
 					border: 1px solid @mainColor;
 					img{
 						opacity: 1;
 					}
-					.gallery-item-description{						
+					.gallery-item-description{
 						transform: translateY(10px);
 					}
-					.gallery-item-zoom{						
+					.gallery-item-zoom{
 					transform: scale(1);
 					opacity: 1;
 					}
 				}
-			}			
+			}
 		}
 	}
 	// start catalog
@@ -979,7 +982,7 @@ article{
 											&:before{
 												transform: rotate(0deg);
 											}
-										}								
+										}
 									}
 								}
 							}
@@ -990,7 +993,7 @@ article{
 										&:before{
 											transform: rotate(180deg);
 										}
-									}								
+									}
 								}
 							}
 						}
@@ -1036,7 +1039,7 @@ article{
 						background-color: @mainColor;
 						color: @graph;
 					}
-				}				
+				}
 			}
 		}
 		.menu-tab-wrapper{
@@ -1072,13 +1075,10 @@ article{
 									justify-content: space-between;
 									p{}
 								}
-							}	
+							}
 							.meal-description{
 								margin-top: 35px;
 							}
-						}
-						&:first-of-type{
-							padding-right: 24px;
 						}
 					}
 				}
@@ -1087,7 +1087,7 @@ article{
 	}
 	// end menu
 }
-.dark{	
+.dark{
 	color: @mainColor;
 }
 .pattern{
@@ -1135,7 +1135,7 @@ article{
 				font-weight: 700;
 				min-height: 430px;
 			}
-		}		
+		}
 		.loyalty{
 			h3{
 				font-size: 24px;
@@ -1200,7 +1200,7 @@ article{
 				}
 			}
 		}
-	}	
+	}
 }
 // end recommended
 // start page-footer
@@ -1226,7 +1226,7 @@ article{
 		}
 		.scheme-popup{
 			display: inline-block;
-			background-color: transparent;			
+			background-color: transparent;
 		}
 		.socials{
 			span{
